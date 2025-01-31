@@ -9,6 +9,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Debugging - Zeige Verzeichnisinhalt
+        run: ls -R
+
+      - name: Debugging - Überprüfe package.json
+        run: cat package.json
+
       - name: Cache dependencies
         uses: actions/cache@v3
         with:
